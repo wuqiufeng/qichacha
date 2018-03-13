@@ -8,16 +8,19 @@
 import json
 
 class QichachaPipeline(object):
-    def __init__(self):
-        self.filename = open("qichacha.json", "w")
+    # def __init__(self):
+    #     pass
+    #
+    #     # self.filename = open("qichacha.json", "w")
 
 
     def process_item(self, item, spider):
-        text = json.dumps(dict(item), ensure_ascii=False) + ",\n"
-        self.filename.write(text.encode("utf-8"))
+        # text = json.dumps(dict(item), ensure_ascii=False) + ",\n"
+        # self.filename.write(text.encode("utf-8"))
         return item
-
-    def close_spider(self, spider):
-        self.filename.close()
+    #
+    # def close_spider(self, spider):
+    #     pass
+    #     # self.filename.close()
 
 

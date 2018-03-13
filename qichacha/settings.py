@@ -15,20 +15,23 @@ SPIDER_MODULES = ['qichacha.spiders']
 NEWSPIDER_MODULE = 'qichacha.spiders'
 
 # 保存日志信息的文件名
-LOG_FILE = "qichacha.log"
+# LOG_FILE = "qichacha.log"
 # 保存日志等级，低于|等于此等级的信息都被保存
-LOG_LEVEL = "DEBUG"
+# LOG_LEVEL = "DEBUG"
+
+# REDIS_HOST = "127.0.0.1"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'qichacha (+http://www.yourdomain.com)'
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+# USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
 
 
 
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = False
 
+#请求并发量
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -48,19 +51,15 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
-#     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6',
-#   'Host':'www.qichacha.com',
-#   'Referer':'http://www.qichacha.com/search?key=%E5%89%8D%E6%B5%B7',
-#   'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
-#   'Cookie':'acw_tc=AQAAAMClKWW7Aw4AA4YOtzlzZwkPcQLk; gr_user_id=902c1daf-8f80-4029-9fa8-c592b8892ee0; _uab_collina=149699319138946038350234; UM_distinctid=15c8bbf57c70-011db702092652-3060750a-fa000-15c8bbf57d07; _umdata=70CF403AFFD707DFE7A81215053B1F94125B615566D35889A27BFF2A817CA2240D48C18462499BD5CD43AD3E795C914C137F70B75F790126A4488D143A0E7980; PHPSESSID=k2ngn9tqd3qmacmunak7404p67; CNZZDATA1254842228=1797299873-1496988018-null%7C1497063794',
+#    # 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+#    'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
 # }
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
+# SPIDER_MIDDLEWARES = {
 #    'qichacha.middlewares.QichachaSpiderMiddleware': 543,
-#}
+# }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -76,9 +75,9 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'qichacha.pipelines.QichachaPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#    'qichacha.pipelines.QichachaPipeline': 300,
+# }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
